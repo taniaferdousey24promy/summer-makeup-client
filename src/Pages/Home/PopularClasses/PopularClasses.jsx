@@ -18,7 +18,7 @@ const PopularClasses = () => {
       .then((res) => res.json())
       .then((data) => {
         const popularClasses = data.filter(
-          (item) => item.category === "popular"
+          (popular) => popular.studentNumber >= 8
         );
         setClasses(popularClasses);
       });
