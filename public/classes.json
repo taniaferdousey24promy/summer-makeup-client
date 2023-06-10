@@ -1,0 +1,112 @@
+[
+    {
+        "id": 1,
+        "className": "Class 1: Introduction to Makeup",
+        "classPicture": "https://example.com/class1.jpg",
+        "studentNumber": 15,
+        "instructorName": "Jane Doe",
+        "instructorImage": "https://example.com/janedoe.jpg",
+        "instructorEmail": "jane.doe@example.com",
+        "availableSeats": 10,
+        "price": "$100"
+      },
+      {
+        "id": 2,
+        "className": "Class 2: Contouring Techniques",
+        "classPicture": "https://example.com/class2.jpg",
+        "studentNumber": 12,
+        "instructorName": "John Smith",
+        "instructorImage": "https://example.com/johnsmith.jpg",
+        "instructorEmail": "john.smith@example.com",
+        "availableSeats": 8,
+        "price": "$120"
+      },
+      {
+        "id": 3,
+        "className": "Class 3: Smokey Eye Makeup",
+        "classPicture": "https://example.com/class3.jpg",
+        "studentNumber": 10,
+        "instructorName": "Sarah Johnson",
+        "instructorImage": "https://example.com/sarahjohnson.jpg",
+        "instructorEmail": "sarah.johnson@example.com",
+        "availableSeats": 5,
+        "price": "$80"
+      },
+      {
+        "id": 4,
+        "className": "Class 4: Bridal Makeup Techniques",
+        "classPicture": "https://example.com/class4.jpg",
+        "studentNumber": 18,
+        "instructorName": "Michael Anderson",
+        "instructorImage": "https://example.com/michaelanderson.jpg",
+        "instructorEmail": "michael.anderson@example.com",
+        "availableSeats": 7,
+        "price": "$150"
+      },
+      {
+        "id": 5,
+        "className": "Class 5: Natural Makeup Looks",
+        "classPicture": "https://example.com/class5.jpg",
+        "studentNumber": 20,
+        "instructorName": "Emily Wilson",
+        "instructorImage": "https://example.com/emilywilson.jpg",
+        "instructorEmail": "emily.wilson@example.com",
+        "availableSeats": 3,
+        "price": "$90"
+      },
+      {
+        "id": 6,
+        "className": "Class 6: Eye Makeup Masterclass",
+        "classPicture": "https://example.com/class6.jpg",
+        "studentNumber": 14,
+        "instructorName": "David Thompson",
+        "instructorImage": "https://example.com/davidthompson.jpg",
+        "instructorEmail": "david.thompson@example.com",
+        "availableSeats": 9,
+        "price": "$110"
+      },
+      {
+        "id": 7,
+        "className": "Class 7: Airbrush Makeup Techniques",
+        "classPicture": "https://example.com/class7.jpg",
+        "studentNumber": 10,
+        "instructorName": "Olivia Martinez",
+        "instructorImage": "https://example.com/oliviamartinez.jpg",
+        "instructorEmail": "olivia.martinez@example.com",
+        "availableSeats": 6,
+        "price": "$130"
+      },
+      {
+        "id": 8,
+        "className": "Class 8: Editorial Makeup Styles",
+        "classPicture": "https://example.com/class8.jpg",
+        "studentNumber": 16,
+        "instructorName": "Daniel Brown",
+        "instructorImage": "https://example.com/danielbrown.jpg",
+        "instructorEmail": "daniel.brown@example.com",
+        "availableSeats": 4,
+        "price": "$140"
+      },
+      {
+        "id": 9,
+        "className": "Class 9: Special Effects Makeup",
+        "classPicture": "https://example.com/class9.jpg",
+        "studentNumber": 8,
+        "instructorName": "Sophia Davis",
+        "instructorImage": "https://example.com/sophiadavis.jpg",
+        "instructorEmail": "sophia.davis@example.com",
+        "availableSeats": 2,
+        "price": "$200"
+      },
+      {
+        "id": 10,
+        "className": "Class 10: Colorful Makeup Techniques",
+        "classPicture": "https://example.com/class10.jpg",
+        "studentNumber": 12,
+        "instructorName": "Benjamin Wilson",
+        "instructorImage": "https://example.com/benjaminwilson.jpg",
+        "instructorEmail": "benjamin.wilson@example.com",
+        "availableSeats": 10,
+        "price": "$180"
+      }
+]
