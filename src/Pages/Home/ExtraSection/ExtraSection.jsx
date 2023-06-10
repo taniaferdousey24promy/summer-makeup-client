@@ -115,7 +115,7 @@ const ExtraSection = () => {
             </h1>
             
             <div className="flex py-6 gap-2 ">
-              <HiSparkles className="mt-2  "></HiSparkles>
+              <HiSparkles className="mt-2 w-7 "></HiSparkles>
               <p>
                 {" "}
                 <span className="font-bold"> Customized guidance: :</span> Learn
@@ -124,7 +124,7 @@ const ExtraSection = () => {
               </p>
             </div>
             <div className="flex py-6 gap-2 ">
-              <HiSparkles className="mt-2  "></HiSparkles>
+              <HiSparkles className="mt-2 w-8 "></HiSparkles>
               <p>
                 {" "}
                 <span className="font-bold"> Exclusive bonuses: :</span> Gain
