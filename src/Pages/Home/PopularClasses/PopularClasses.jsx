@@ -4,45 +4,63 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
+import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-import "swiper/css/navigation";
-
-
 
 // import required modules
-import { Pagination, Navigation } from "swiper";
-
-
+import { EffectCoverflow, Pagination } from "swiper";
+import "./PopularClasses.css";
 
 const PopularClasses = () => {
-   const [classes,setClasses]=useState([]);
-  useEffect(()=>{
-    fetch('classes.json')
-    .then(res=>res.json())
-    .then(data=>{
-      const popularClasses = data.filter(item =>item.category === 'popular');
-      setClasses(popularClasses)})
-  },[])
+  const [classes, setClasses] = useState([]);
+  useEffect(() => {
+    fetch("classes.json")
+      .then((res) => res.json())
+      .then((data) => {
+        const popularClasses = data.filter(
+          (item) => item.category === "popular"
+        );
+        setClasses(popularClasses);
+      });
+  }, []);
   console.log(classes);
   return (
     <>
+      <h1 className="uppercase text-3xl text-center mb-12 font-bold">Achieve your goals with our Popular Classes</h1>
+
       <Swiper
-        pagination={{
-          type: "progressbar",
+        effect={"coverflow"}
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={"auto"}
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
         }}
-        navigation={true}
-        modules={[Pagination, Navigation]}
+        pagination={true}
+        modules={[EffectCoverflow, Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        {/* <SwiperSlide>Slide 1</SwiperSlide> */}
+        {classes.map((singleClass) => (
+          <SwiperSlide
+            key={singleClass.id}
+            singleClass={singleClass}
+            className="custom"
+          >
+            <img
+              className="h-[300px] w-[350px]"
+              src={singleClass.classPicture}
+              alt=""
+            />
+            <h3 className=" uppercase text-center text-black-400 mb-16  font-bold ">
+              {singleClass.className}
+            </h3>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </>
   );

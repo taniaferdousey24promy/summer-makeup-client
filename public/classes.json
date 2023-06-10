@@ -1,8 +1,8 @@
 [
     {
         "id": 0,
-        "className": "Class 1: Introduction to Makeup",
-        "classPicture": "https://example.com/class1.jpg",
+        "className": "Introduction to Makeup",
+        "classPicture": "https://i.postimg.cc/NFtrX9S4/318045-1600x1067-applying-lip-gloss.jpg",
         "studentNumber": 15,
         "instructorName": "Jane Doe",
         "instructorImage": "https://example.com/janedoe.jpg",
@@ -13,8 +13,8 @@
       },
       {
         "id": 1,
-        "className": "Class 2: Contouring Techniques",
-        "classPicture": "https://example.com/class2.jpg",
+        "className": "Contouring Techniques",
+        "classPicture": "https://i.postimg.cc/mgZhcbxW/8-Products-To-Achieve-The-No-Makeup-Look-Society19.jpg",
         "studentNumber": 12,
         "instructorName": "John Smith",
         "instructorImage": "https://example.com/johnsmith.jpg",
@@ -25,8 +25,8 @@
       },
       {
         "id": 2,
-        "className": "Class 3: Smokey Eye Makeup",
-        "classPicture": "https://example.com/class3.jpg",
+        "className": "Smokey Eye Makeup",
+        "classPicture": "https://i.postimg.cc/Gp8LYtqV/The-Anti-Aging-Contour-Trick-Every-Woman-Over-40-Should-Try.jpg",
         "studentNumber": 10,
         "instructorName": "Sarah Johnson",
         "instructorImage": "https://example.com/sarahjohnson.jpg",
@@ -37,8 +37,8 @@
       },
       {
         "id": 3,
-        "className": "Class 4: Bridal Makeup Techniques",
-        "classPicture": "https://example.com/class4.jpg",
+        "className": "Bridal Makeup Techniques",
+        "classPicture": "https://i.postimg.cc/SxqqRVMX/15-Basic-Makeup-Essentials-That-Belong-in-Every-Makeup-Bag.jpg",
         "studentNumber": 18,
         "instructorName": "Michael Anderson",
         "instructorImage": "https://example.com/michaelanderson.jpg",
@@ -49,8 +49,8 @@
       },
       {
         "id": 4,
-        "className": "Class 5: Natural Makeup Looks",
-        "classPicture": "https://example.com/class5.jpg",
+        "className": "Natural Makeup Looks",
+        "classPicture": "https://i.postimg.cc/TwZv6cx3/Best-Makeup-For-An-Even-Complexion.jpg",
         "studentNumber": 20,
         "instructorName": "Emily Wilson",
         "instructorImage": "https://example.com/emilywilson.jpg",
@@ -61,8 +61,8 @@
       },
       {
         "id": 5,
-        "className": "Class 6: Eye Makeup Masterclass",
-        "classPicture": "https://example.com/class6.jpg",
+        "className": "Eye Makeup Masterclass",
+        "classPicture": "https://i.postimg.cc/15B70KdV/How-To-Apply-Foundation-That-Looks-Flawless-Colleen-Hobson.png",
         "studentNumber": 14,
         "instructorName": "David Thompson",
         "instructorImage": "https://example.com/davidthompson.jpg",
@@ -73,19 +73,18 @@
       },
       {
         "id": 6,
-        "className": "Class 7: Airbrush Makeup Techniques",
+        "className": "Airbrush Makeup Techniques",
         "classPicture": "https://example.com/class7.jpg",
         "studentNumber": 10,
         "instructorName": "Olivia Martinez",
         "instructorImage": "https://example.com/oliviamartinez.jpg",
         "instructorEmail": "olivia.martinez@example.com",
         "availableSeats": 6,
-        "category":"popular",
         "price": "$130"
       },
       {
         "id": 7,
-        "className": "Class 8: Editorial Makeup Styles",
+        "className": "Editorial Makeup Styles",
         "classPicture": "https://example.com/class8.jpg",
         "studentNumber": 16,
         "instructorName": "Daniel Brown",
@@ -96,7 +95,7 @@
       },
       {
         "id": 8,
-        "className": "Class 9: Special Effects Makeup",
+        "className": "Special Effects Makeup",
         "classPicture": "https://example.com/class9.jpg",
         "studentNumber": 8,
         "instructorName": "Sophia Davis",
@@ -107,7 +106,7 @@
       },
       {
         "id": 9,
-        "className": "Class 10: Colorful Makeup Techniques",
+        "className": "Colorful Makeup Techniques",
         "classPicture": "https://example.com/class10.jpg",
         "studentNumber": 12,
         "instructorName": "Benjamin Wilson",
