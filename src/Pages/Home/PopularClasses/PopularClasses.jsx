@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -12,7 +12,18 @@ import "swiper/css/navigation";
 // import required modules
 import { Pagination, Navigation } from "swiper";
 
+
+
 const PopularClasses = () => {
+   const [classes,setClasses]=useState([]);
+  useEffect(()=>{
+    fetch('classes.json')
+    .then(res=>res.json())
+    .then(data=>{
+      const popularClasses = data.filter(item =>item.category === 'popular');
+      setClasses(popularClasses)})
+  },[])
+  console.log(classes);
   return (
     <>
       <Swiper
