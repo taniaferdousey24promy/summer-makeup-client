@@ -11,14 +11,17 @@
   },
   "dependencies": {
     "@react-spring/web": "^9.7.2",
+    "@stitches/react": "^1.2.8",
     "animate.css": "^4.1.1",
     "animejs": "^3.2.1",
     "daisyui": "^3.0.22",
+    "framer-motion": "^10.12.16",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
     "react": "^18.2.0",
     "react-awesome-slider": "^4.1.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.9.0",
     "react-router-dom": "^6.12.1",
     "sort-by": "^1.2.0",
     "swiper": "^9.3.2"
