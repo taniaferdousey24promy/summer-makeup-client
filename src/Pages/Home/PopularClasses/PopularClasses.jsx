@@ -11,6 +11,10 @@ import "swiper/css/pagination";
 import { EffectCoverflow, Pagination } from "swiper";
 import "./PopularClasses.css";
 
+//delete
+
+
+
 const PopularClasses = () => {
   const [classes, setClasses] = useState([]);
   useEffect(() => {
@@ -26,7 +30,11 @@ const PopularClasses = () => {
   console.log(classes);
   return (
     <>
-      <h1 className="uppercase text-3xl text-center mb-12 font-bold">Achieve your goals with our Popular Classes</h1>
+      {/* delete */}
+      
+      <h1 className="uppercase text-3xl text-center mb-12 font-bold">
+        Achieve your goals with our Popular Classes
+      </h1>
 
       <Swiper
         effect={"coverflow"}
