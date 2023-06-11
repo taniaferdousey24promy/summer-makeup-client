@@ -1,31 +1,22 @@
 
+import { useContext } from 'react';
 import { useForm } from 'react-hook-form';
+import { AuthContext } from "../../providers/AuthProvider";
 
 const SignUp = () => {
-    // const {signIn}=useContext(AuthContext);
+    
 
-    // const handleLogin =(event)=>{
-    //     event.preventDefault();
-    //     const form=event.target;
-    //     const email = form.email.value;
-    //     const password = form.password.value;
-    //     console.log(email,password);
-    //     signIn(email,password)
-    //         .then((result)=>{
-    //             const user = result.user;
-    //             console.log(user);
-    //         });
-
-    // };
-
-    const {
-        register,
-        handleSubmit,
-        formState: {errors},
-
-    }=useForm();
+    const {register,handleSubmit,formState: {errors}}=useForm();
+    const {createUser} = useContext(AuthContext);
     const onSubmit =(data)=>{
         console.log(data);
+   
+
+    createUser(data.email,data.password)
+        .then(result =>{
+            const loggedUdser = result.user;
+            console.log(loggedUdser);
+        })
     };
     return (
         <div>
@@ -81,8 +72,8 @@ const SignUp = () => {
                 </label>
                 <input
                   type="password"
-                  {...register("password",{required:true, minLength:6, maxLength:20,pattern: /(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z])/
-})}
+                  {...register("password",{required:true, minLength:6, maxLength:20,pattern: /(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z])/,
+                  })}
                   name="password"
                   placeholder="Password"
                   className="input input-bordered"
