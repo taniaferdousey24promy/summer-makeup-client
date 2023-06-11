@@ -12,27 +12,27 @@ const Navbar = () => {
   }
   const navOptions = (
     <>
-      <li>
+      <li className="text-[16px]">
         <Link to="/">Home</Link>
       </li>
 
-      <li>
-      <Link to="/instructor">Instructor</Link>
+      <li className="text-[16px]">
+      <Link to="/allinstructors">Instructor</Link>
       </li>
-      <li>
+      <li className="text-[16px]">
       <Link to="/classes">Classes</Link>
       </li>
 
-      <li>
+      <li className="text-[16px]">
       <Link to="/dashboard">Dashboard</Link>
       </li>
 
       {
         user? 
         <>
-        <button className="btn btn-ghost" onClick={handleLogOut}>Logout</button>
+        <button className="text-[16px] ms-3 text-pink-600 text-left" onClick={handleLogOut}>Logout</button>
         </>:<>
-          <li><Link to="/login">Login</Link></li>
+     <li><Link className=" text-[16px] text-pink-600" to="/login">Login</Link></li> 
         </>
       }
     </>
