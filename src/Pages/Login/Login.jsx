@@ -1,6 +1,8 @@
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
-import { sendPasswordResetEmail } from "firebase/auth";
+import Swal from "sweetalert2";
+import { Link } from "react-router-dom";
+
 
 const Login = () => {
 
@@ -16,6 +18,15 @@ const Login = () => {
             .then((result)=>{
                 const user = result.user;
                 console.log(user);
+                Swal.fire({
+                  title: 'User Logged In Successfully',
+                  showClass: {
+                    popup: 'animate__animated animate__fadeInDown'
+                  },
+                  hideClass: {
+                    popup: 'animate__animated animate__fadeOutUp'
+                  },
+                });
             });
 
     };
@@ -56,9 +67,23 @@ const Login = () => {
                 </label>
               </div>
               <div className="form-control mt-6">
-                <button className="btn btn-primary">Login</button>
+                {/* <button className="btn btn-primary">Login</button> */}
+                {/* <label className="label">
+                  <span className="label-text">Email</span>
+                </label> */}
+                <input
+                  type="submit"
+                  placeholder="email"
+                  className="btn btn-primary"
+                  value="Login"
+                />
               </div>
             </form>
+            <p>
+              <small>
+                New Here ? <Link to="/signup">Create an Account</Link>
+              </small>
+            </p>
           </div>
         </div>
       </div>
