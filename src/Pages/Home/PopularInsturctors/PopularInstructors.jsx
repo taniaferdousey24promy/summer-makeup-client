@@ -26,8 +26,8 @@ const PopularInstructors = () => {
   }, []);
   console.log(classes);
   return (
-    <div>
-      <h1 className="uppercase text-3xl text-center mb-12 font-bold">
+    <div className="mb-20">
+      <h1 className="uppercase text-3xl text-center mb-20 font-bold">
         Popular Instructors{" "}
       </h1>
       <Swiper

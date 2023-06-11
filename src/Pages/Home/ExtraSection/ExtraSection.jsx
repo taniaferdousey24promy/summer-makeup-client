@@ -39,14 +39,14 @@ const SharedStyles = {
 
 const FrontBox = styled(animated.div, {
   ...SharedStyles,
-  backgroundColor: "#fafafa",
+  backgroundColor: "#FA8072	",
   border: "solid 2px #1a1a1a",
 });
 
 const BackBox = styled(animated.div, {
   ...SharedStyles,
-  backgroundColor: "#6cab64",
-  border: "solid 2px #6cab64",
+  backgroundColor: "#FA8072	",
+  border: "solid 2px pink",
   color: "#fafafa",
 });
 
@@ -111,7 +111,7 @@ const ExtraSection = () => {
           />
           <div className=" w-[1000px] bg-[#FBCEB1] h-[400px] p-12">
             <h1 className="text-4xl font-bold">
-              SURPRISE on Smokey Eye Makeup Course!
+              <span className="text-[#FA8072]	">SURPRISE</span>  on Smokey Eye Makeup Course!
             </h1>
             
             <div className="flex py-6 gap-2 ">
@@ -132,7 +132,7 @@ const ExtraSection = () => {
                 personalized guidance and exclusive bonuses.
               </p>
             </div>
-            <button className="m-4 btn btn-primary">Buy Now</button>
+            <button className="m-4 btn bg-[#FA8072]">Buy Now</button>
           </div>
         </div>
       </div>

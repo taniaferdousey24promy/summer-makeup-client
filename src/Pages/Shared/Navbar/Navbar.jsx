@@ -1,21 +1,22 @@
 import React from "react";
 import './Navbar.css'
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const navOptions = (
     <>
       <li>
-        <a>Home</a>
+        <Link to="/">Home</Link>
       </li>
 
       <li>
-        <a>Instructor</a>
+      <Link to="/instructor">Instructor</Link>
       </li>
       <li>
-        <a>Classes</a>
+      <Link to="/classes">Classes</Link>
       </li>
 
       <li>
-        <a>Dashboard</a>
+      <Link to="/dashboard">Dashboard</Link>
       </li>
     </>
   );
@@ -55,7 +56,7 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{navOptions}</ul>
         </div>
         <div className="navbar-end">
-          <a className="btn me-4">Login</a>
+          <Link to="/login" className="btn me-4">Login</Link>
         </div>
       </div>
     </div>

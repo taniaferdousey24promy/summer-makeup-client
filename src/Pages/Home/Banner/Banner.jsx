@@ -104,19 +104,19 @@ const Banner = () => {
           />
 
           <div className="   -mt-[600px] text-left   ml-40">
-            <h3 className=" font uppercase text-5xl text-black-400 mb-8 font-bold ">
+            <h3 className=" font-extrabold uppercase text-5xl text-black-400 mb-8 font-extrabold-bold ">
               2023
             </h3>
-            <h3 className=" font uppercase text-5xl text-black-400 font-bold mb-8 ">
+            <h3 className=" font-extrabold uppercase text-5xl text-black-400 font-extrabold-bold mb-8 ">
               Summer Camp
             </h3>
 
-            <h3 className=" text-2xl font text-pink-800 mt-5 mb-12">
+            <h3 className=" text-2xl font-extrabold text-pink-800 mt-5 mb-12">
               Creativity and professional
             </h3>
 
             <div className="w-[500px]">
-              <h3 className="mt-4  w-50">
+              <h3 className="mt-4 font-bold w-50">
                 Welcome to our Summer Camp Makeup Classes! Get ready to enhance
                 your skills, explore new techniques, and unleash your
                 creativity. Join us for an unforgettable summer filled with
@@ -124,14 +124,14 @@ const Banner = () => {
               </h3>
             </div>
 
-            <h3 className=" font text-2xl text-black mt-4  mt-16">
+            <h3 className=" font-extrabold text-2xl text-black mt-4  mt-16">
               signup by 6-28, 2023
             </h3>
-            <h3 className=" text-2xl font text-pink-800 mt-12 ">
+            <h3 className=" text-2xl font-extrabold text-pink-800 mt-12 ">
             Hands-on & Live Demo Group Class
             </h3>
       
-            <h3 className="  font  mt-5 mb-4">
+            <h3 className="  font-bold  mt-5 mb-4">
             1-On-1 Session
 
             </h3>
@@ -151,7 +151,7 @@ const Banner = () => {
 
           {/* <div className=" bg-black text-white bg-opacity-50 p-4  -mt-[600px] text-left   ml-40"> */}
           <div className="m-4 absolute bottom-10 left-20 right-30 top-10 px-4 py-2 bg-gray-800 opacity-70">
-            <div className=" mt-8 mx-8 font uppercase  text-white mb-8 font-bold">
+            <div className=" mt-8 mx-8 font-extrabold uppercase  text-white mb-8 font-extrabold-bold">
               <h1 className="text-2xl">Offline Course on</h1>
 
               <br />
@@ -188,7 +188,7 @@ const Banner = () => {
           />
 
           <div className="m-4 absolute bottom-10 left-30 right-20 top-10 px-4 py-2 bg-gray-800 opacity-70">
-            <div className=" mt-8 mx-8 font uppercase  text-white mb-8 font-bold">
+            <div className=" mt-8 mx-8 font-extrabold uppercase  text-white mb-8 font-extrabold-bold">
               <h1 className="text-3xl">Beginners <br /> <h1 className="mt-8">1.0</h1> </h1>
 
               <br />
