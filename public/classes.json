@@ -37,7 +37,7 @@
       },
       {
         "id": 3,
-        "className": "Bridal Makeup Techniques",
+        "className": "Bridal Makeup",
         "classPicture": "https://i.postimg.cc/SxqqRVMX/15-Basic-Makeup-Essentials-That-Belong-in-Every-Makeup-Bag.jpg",
         "studentNumber": 18,
         "instructorName": "Michael Anderson",
@@ -49,7 +49,7 @@
       },
       {
         "id": 4,
-        "className": "Natural Makeup Looks",
+        "className": "Natural Makeup",
         "classPicture": "https://i.postimg.cc/TwZv6cx3/Best-Makeup-For-An-Even-Complexion.jpg",
         "studentNumber": 20,
         "instructorName": "Emily Wilson",
@@ -77,7 +77,7 @@
         "classPicture": "https://example.com/class7.jpg",
         "studentNumber": 2,
         "instructorName": "Olivia Martinez",
-        "instructorImage": "https://example.com/oliviamartinez.jpg",
+        "instructorImage": "https://i.postimg.cc/W1fdcgxD/s.jpg",
         "instructorEmail": "olivia.martinez@example.com",
         "availableSeats": 6,
         "price": "$130"
@@ -88,7 +88,7 @@
         "classPicture": "https://example.com/class8.jpg",
         "studentNumber": 2,
         "instructorName": "Daniel Brown",
-        "instructorImage": "https://example.com/danielbrown.jpg",
+        "instructorImage": "https://i.postimg.cc/PJzCgckh/images-4.jpg",
         "instructorEmail": "daniel.brown@example.com",
         "availableSeats": 4,
         "price": "$140"
@@ -99,18 +99,18 @@
         "classPicture": "https://example.com/class9.jpg",
         "studentNumber": 2,
         "instructorName": "Sophia Davis",
-        "instructorImage": "https://example.com/sophiadavis.jpg",
+        "instructorImage": "https://i.postimg.cc/65kPjmpT/PP1-VHM6s-T4-WZji-Kuc-LXE-fa50fca2-e066-4eab-bfea-3caa7dd8d45c-5ebafea173f402001ecea67a-after-Image-2020-0.jpg",
         "instructorEmail": "sophia.davis@example.com",
         "availableSeats": 2,
         "price": "$200"
       },
       {
         "id": 9,
-        "className": "Colorful Makeup Techniques",
+        "className": "Colorful Makeup ",
         "classPicture": "https://example.com/class10.jpg",
         "studentNumber": 2,
         "instructorName": "Benjamin Wilson",
-        "instructorImage": "https://example.com/benjaminwilson.jpg",
+        "instructorImage": "https://i.postimg.cc/P5MMW3Lg/1420290-500w.jpg",
         "instructorEmail": "benjamin.wilson@example.com",
         "availableSeats": 10,
         "price": "$180"
