@@ -53,6 +53,7 @@ const AllClasses = () => {
         confirmButtonText: 'Login now!'
       }).then((result) => {
         if (result.isConfirmed) {
+          //here
           navigate('/login',{state:{from:location}})
         }
       })
