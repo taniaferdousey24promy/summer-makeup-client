@@ -1,15 +1,18 @@
 import { useContext } from "react";
-import './Navbar.css'
+import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../../providers/AuthProvider";
+import useCart from "../../../hooks/useCart";
+import { FaShoppingBag } from "react-icons/fa";
 
 const Navbar = () => {
-  const {user,logOut}=useContext(AuthContext);
-  const handleLogOut =()=>{
+  const { user, logOut } = useContext(AuthContext);
+  const [cart] = useCart();
+  const handleLogOut = () => {
     logOut()
-    .then(()=>{})
-    .catch(error=> console.log(error))
-  }
+      .then(() => {})
+      .catch((error) => console.log(error));
+  };
   const navOptions = (
     <>
       <li className="text-[16px] mt-2">
@@ -17,31 +20,49 @@ const Navbar = () => {
       </li>
 
       <li className="text-[16px] mt-2">
-      <Link to="/allinstructors">Instructor</Link>
+        <Link to="/allinstructors">Instructor</Link>
       </li>
       <li className="text-[16px] mt-2">
-      <Link to="/allclasses">Classes</Link>
+        <Link to="/allclasses">Classes</Link>
       </li>
 
       <li className="text-[16px] mt-2">
-      <Link to="/dashboard">Dashboard</Link>
+        <Link to="/dashboard/mycart">
+          {" "}
+          <FaShoppingBag></FaShoppingBag> <p>Dashboard</p>
+          <div className="badge badge-secondary"> +{cart?.length || 0} 
+         </div>
+        </Link>
       </li>
 
-      {
-        user? 
+      {user ? (
         <>
-        <button className=" text-[16px] ms-3 text-pink-600 text-left" onClick={handleLogOut}>Logout</button>
-        <img className=" ms-8 h-[50px] w-[50px] rounded-full" src={user?.photoURL} alt="" />
-
-        </>:<>
-     <li><Link className=" text-[16px] text-pink-600" to="/login">Login</Link></li> 
+          <button
+            className=" text-[16px] ms-3 text-pink-600 text-left"
+            onClick={handleLogOut}
+          >
+            Logout
+          </button>
+          <img
+            className=" ms-8 h-[50px] w-[50px] rounded-full"
+            src={user?.photoURL}
+            alt=""
+          />
         </>
-      }
+      ) : (
+        <>
+          <li>
+            <Link  className=" text-[16px] text-pink-600" to="/login">
+              Login
+            </Link>
+          </li>
+        </>
+      )}
     </>
   );
   return (
     <div>
-      <div  className="navbar bg-base-300 rounded bg-transparent mt-12 ">
+      <div className="navbar bg-base-300 rounded bg-transparent mt-12 ">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -67,9 +88,15 @@ const Navbar = () => {
               {navOptions}
             </ul>
           </div>
-          <img className="rounded-full h-[50px] w-[50px]" src="https://i.ibb.co/6bz2YsT/v.jpg" alt="" />
+          <img
+            className="rounded-full h-[50px] w-[50px]"
+            src="https://i.ibb.co/6bz2YsT/v.jpg"
+            alt=""
+          />
 
-          <a className=" font ms-3 normal-case text-2xl font-bold">Summer Makeup</a>
+          <a className=" font ms-3 normal-case text-2xl font-bold">
+            Summer Makeup
+          </a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navOptions}</ul>

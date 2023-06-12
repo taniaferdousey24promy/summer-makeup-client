@@ -9,7 +9,7 @@
         "availableSeats": 10,
         "category":"popular",
         "status":"approved",
-        "price": "$100"
+        "price": "100"
       },
       {
         "className": "Contouring Techniques",
@@ -21,7 +21,7 @@
         "availableSeats": 8,
         "category":"popular",
         "status":"approved",
-        "price": "$120"
+        "price": "120"
       },
       {
         "className": "Smokey Eye Makeup",
@@ -33,7 +33,7 @@
         "availableSeats": 5,
         "category":"popular",
         "status":"approved",
-        "price": "$80"
+        "price": "80"
       },
       {
         "className": "Bridal Makeup",
@@ -45,7 +45,7 @@
         "availableSeats": 7,
         "category":"popular",
         "status":"approved",
-        "price": "$150"
+        "price": "150"
       },
       {
         "className": "Natural Makeup",
@@ -57,7 +57,7 @@
         "availableSeats": 3,
         "category":"popular",
         "status":"approved",
-        "price": "$90"
+        "price": "90"
       },
       {
         "className": "Eye Makeup Masterclass",
@@ -69,7 +69,7 @@
         "availableSeats": 9,
         "category":"popular",
         "status":"pending",
-        "price": "$110"
+        "price": "110"
       },
       {
         "className": "Airbrush Makeup Techniques",
@@ -80,7 +80,7 @@
         "instructorEmail": "olivia.martinez@example.com",
         "availableSeats": 6,
         "status":"pending",
-        "price": "$130"
+        "price": "130"
       },
       {
         "className": "Editorial Makeup Styles",
@@ -91,7 +91,7 @@
         "instructorEmail": "daniel.brown@example.com",
         "availableSeats": 4,
         "status":"pending",
-        "price": "$140"
+        "price": "140"
       },
       {
         "className": "Special Effects Makeup",
@@ -102,7 +102,7 @@
         "instructorEmail": "sophia.davis@example.com",
         "availableSeats": 2,
         "status":"denied",
-        "price": "$200"
+        "price": "200"
       },
       {
         "className": "Colorful Makeup ",
@@ -113,6 +113,6 @@
         "instructorEmail": "benjamin.wilson@example.com",
         "availableSeats": 10,
         "status":"denied",
-        "price": "$180"
+        "price": "180"
       }
 ]
