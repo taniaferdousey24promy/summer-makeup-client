@@ -4,7 +4,9 @@ const useClasses = () => {
   const [classes, setClasses] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    fetch("classes.json")
+    fetch(
+      "https://summer-makeup-server-taniaferdousey24promy.vercel.app/allclasses"
+    )
       .then((res) => res.json())
       .then((data) => {
         setClasses(data);
@@ -12,7 +14,7 @@ const useClasses = () => {
       });
   }, []);
 
-  return [classes,loading];
+  return [classes, loading];
 };
 
 export default useClasses;

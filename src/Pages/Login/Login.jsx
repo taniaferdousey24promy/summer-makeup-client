@@ -1,12 +1,20 @@
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 import Swal from "sweetalert2";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import GoogleLogin from "../Shared/GoogleLogin/GoogleLogin";
 
 
 const Login = () => {
 
     const {signIn}=useContext(AuthContext);
+
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    let from = location.state?.from?.pathname || "/";
+
+
 
     const handleLogin =(event)=>{
         event.preventDefault();
@@ -27,6 +35,7 @@ const Login = () => {
                     popup: 'animate__animated animate__fadeOutUp'
                   },
                 });
+                navigate(from,{replace :true});
             });
 
     };
@@ -78,12 +87,17 @@ const Login = () => {
                   value="Login"
                 />
               </div>
-            </form>
-            <p>
-              <small>
-                New Here ? <Link className='text-pink-600' to="/signup">Create an Account</Link>
+              <p className="mt-12 text-[20px]">
+              <small >
+                New Here ? <Link className='text-pink-600 ' to="/signup">Create an Account</Link>
               </small>
             </p>
+            </form>
+            <GoogleLogin ></GoogleLogin>
+
+            
+
+            
           </div>
         </div>
       </div>

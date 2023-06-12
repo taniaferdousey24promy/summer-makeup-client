@@ -15,7 +15,9 @@ const PopularInstructors = () => {
   const [classes, setClasses] = useState([]);
 
   useEffect(() => {
-    fetch("classes.json")
+    fetch(
+      "https://summer-makeup-server-taniaferdousey24promy.vercel.app/allclasses"
+    )
       .then((res) => res.json())
       .then((data) => {
         const popularClasses = data.filter(

@@ -1,6 +1,5 @@
 [
     {
-        "id": 0,
         "className": "Introduction to Makeup",
         "classPicture": "https://i.postimg.cc/NFtrX9S4/318045-1600x1067-applying-lip-gloss.jpg",
         "studentNumber": 15,
@@ -13,7 +12,6 @@
         "price": "$100"
       },
       {
-        "id": 1,
         "className": "Contouring Techniques",
         "classPicture": "https://i.postimg.cc/mgZhcbxW/8-Products-To-Achieve-The-No-Makeup-Look-Society19.jpg",
         "studentNumber": 12,
@@ -26,7 +24,6 @@
         "price": "$120"
       },
       {
-        "id": 2,
         "className": "Smokey Eye Makeup",
         "classPicture": "https://i.postimg.cc/Gp8LYtqV/The-Anti-Aging-Contour-Trick-Every-Woman-Over-40-Should-Try.jpg",
         "studentNumber": 10,
@@ -39,7 +36,6 @@
         "price": "$80"
       },
       {
-        "id": 3,
         "className": "Bridal Makeup",
         "classPicture": "https://i.postimg.cc/SxqqRVMX/15-Basic-Makeup-Essentials-That-Belong-in-Every-Makeup-Bag.jpg",
         "studentNumber": 18,
@@ -52,7 +48,6 @@
         "price": "$150"
       },
       {
-        "id": 4,
         "className": "Natural Makeup",
         "classPicture": "https://i.postimg.cc/TwZv6cx3/Best-Makeup-For-An-Even-Complexion.jpg",
         "studentNumber": 20,
@@ -65,7 +60,6 @@
         "price": "$90"
       },
       {
-        "id": 5,
         "className": "Eye Makeup Masterclass",
         "classPicture": "https://i.postimg.cc/15B70KdV/How-To-Apply-Foundation-That-Looks-Flawless-Colleen-Hobson.png",
         "studentNumber": 14,
@@ -78,7 +72,6 @@
         "price": "$110"
       },
       {
-        "id": 6,
         "className": "Airbrush Makeup Techniques",
         "classPicture": "https://example.com/class7.jpg",
         "studentNumber": 2,
@@ -90,7 +83,6 @@
         "price": "$130"
       },
       {
-        "id": 7,
         "className": "Editorial Makeup Styles",
         "classPicture": "https://example.com/class8.jpg",
         "studentNumber": 2,
@@ -102,7 +94,6 @@
         "price": "$140"
       },
       {
-        "id": 8,
         "className": "Special Effects Makeup",
         "classPicture": "https://example.com/class9.jpg",
         "studentNumber": 2,
@@ -114,7 +105,6 @@
         "price": "$200"
       },
       {
-        "id": 9,
         "className": "Colorful Makeup ",
         "classPicture": "https://example.com/class10.jpg",
         "studentNumber": 2,

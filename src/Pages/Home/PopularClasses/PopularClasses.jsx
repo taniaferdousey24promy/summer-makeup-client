@@ -11,7 +11,9 @@ import "./PopularClasses.css";
 const PopularClasses = () => {
   const [classes, setClasses] = useState([]);
   useEffect(() => {
-    fetch("classes.json")
+    fetch(
+      "https://summer-makeup-server-taniaferdousey24promy.vercel.app/allclasses"
+    )
       .then((res) => res.json())
       .then((data) => {
         const popularClasses = data.filter(
@@ -23,7 +25,9 @@ const PopularClasses = () => {
   console.log(classes);
   return (
     <>
-      <h1 className="uppercase text-3xl text-center mb-12 font-bold">Achieve your goals with our Popular Classes</h1>
+      <h1 className="uppercase text-3xl text-center mb-12 font-bold">
+        Achieve your goals with our Popular Classes
+      </h1>
       <Swiper
         effect={"coverflow"}
         grabCursor={true}

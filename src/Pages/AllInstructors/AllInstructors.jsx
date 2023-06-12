@@ -23,7 +23,7 @@ const AllInstructors = () => {
               />
 
               {/* div for writing */}
-              <div className=" mt-20   w-[1000px] rounded h-[400px] ">
+              <div className=" mt-8   w-[1000px] rounded h-[400px] ">
                 <div className="white-background bg-base-300 mt-40">
                   <div className="mt-20 mb-20 font-bold content">
                     <span className="text-[#FA8072] text-5xl	">

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import './Navbar.css'
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../../providers/AuthProvider";
@@ -12,25 +12,27 @@ const Navbar = () => {
   }
   const navOptions = (
     <>
-      <li className="text-[16px]">
+      <li className="text-[16px] mt-2">
         <Link to="/">Home</Link>
       </li>
 
-      <li className="text-[16px]">
+      <li className="text-[16px] mt-2">
       <Link to="/allinstructors">Instructor</Link>
       </li>
-      <li className="text-[16px]">
+      <li className="text-[16px] mt-2">
       <Link to="/allclasses">Classes</Link>
       </li>
 
-      <li className="text-[16px]">
+      <li className="text-[16px] mt-2">
       <Link to="/dashboard">Dashboard</Link>
       </li>
 
       {
         user? 
         <>
-        <button className="text-[16px] ms-3 text-pink-600 text-left" onClick={handleLogOut}>Logout</button>
+        <button className=" text-[16px] ms-3 text-pink-600 text-left" onClick={handleLogOut}>Logout</button>
+        <img className=" ms-8 h-[50px] w-[50px] rounded-full" src={user?.photoURL} alt="" />
+
         </>:<>
      <li><Link className=" text-[16px] text-pink-600" to="/login">Login</Link></li> 
         </>
