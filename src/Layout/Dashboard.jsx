@@ -1,8 +1,9 @@
 import React from "react";
 import { FaShoppingBag ,FaHome, FaWallet, FaShoppingBasket } from "react-icons/fa";
-import { Link, Outlet } from "react-router-dom";
+import { Link, NavLink, Outlet } from "react-router-dom";
 
 const Dashboard = () => {
+
   return (
     <div className="drawer lg:drawer-open ">
       <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
@@ -24,29 +25,30 @@ const Dashboard = () => {
 
           <h1 className="text-left   ms-4 font-bold mt-8 mb-12 text-3xl text-pink-500">Summer Makeup</h1>
           <li>
-            <Link> <FaHome></FaHome> User Home</Link>
+            <NavLink to="/dashboard/home"><FaHome></FaHome> User Home</NavLink>
+          </li>
+          
+          <li>
+          <NavLink to="/dashboard/history"> <FaWallet></FaWallet> Payment History</NavLink>
           </li>
           <li>
-          <Link> <FaShoppingBag></FaShoppingBag> Reservation</Link>
+          <NavLink to="/dashboard/mycart"> <FaShoppingBasket></FaShoppingBasket> My Selected Classes</NavLink>
           </li>
           <li>
-          <Link> <FaWallet></FaWallet> Payment History</Link>
-          </li>
-          <li>
-          <Link to="/dashboard/mycart"> <FaShoppingBasket></FaShoppingBasket> My Cart</Link>
+          <NavLink to="/dashboard/reservations"><FaShoppingBag></FaShoppingBag> My Enrolled Classes </NavLink>
           </li>
           <div className="divider">
 
           </div>
           <li>
-          <Link to="/"> <FaHome></FaHome> Home </Link>
+          <NavLink to="/"> <FaHome></FaHome> Home </NavLink>
           </li>
           <li>
-          <Link to="/allclasses"> <FaWallet></FaWallet> Our Classes</Link>
+          <NavLink to="/allclasses"> <FaWallet></FaWallet> Our Classes</NavLink>
           </li>
           
           <li>
-          <Link to="/allclasses"> <FaWallet></FaWallet> Our Classes</Link>
+          <NavLink to="/allinstructors"> <FaWallet></FaWallet> Our Instructors</NavLink>
           </li>
 
         </ul>

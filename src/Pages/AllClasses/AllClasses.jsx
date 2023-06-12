@@ -2,7 +2,7 @@ import React from "react";
 import useClasses from "../../hooks/useClasses";
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
-import { useLocation, useNavigate } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import useCart from "../../hooks/useCart";
 
@@ -16,10 +16,10 @@ const AllClasses = () => {
     (singleClass) => singleClass.status === "approved"
   );
   const handleAddToCart = singleClass => {
-    const {_id,className,classPicture,price}=singleClass;
+    const {_id,className,classPicture,price,studentNumber,instructorName,instructorImage,instructorEmail,availableSeats,status}=singleClass;
     console.log(singleClass);
     if (user && user.email) {
-      const cartSingleClasses = {classesSingleClassesId:_id,className,classPicture,price,email:user.email}
+      const cartSingleClasses = {className,classPicture,price,studentNumber,instructorName,instructorImage,instructorEmail,availableSeats,status,email:user.email}
       fetch('http://localhost:5000/carts',{
         method:'POST',
         headers:{
@@ -102,12 +102,12 @@ const AllClasses = () => {
                   {/* <div className="badge badge-outline">Weekly</div> */}
 
                   {/* <div className="badge badge-outline"> Price: {singleClasses.price}</div> */}
-                  <button
+                  <NavLink to="/dashboard/mycart"><button
                     onClick={() => handleAddToCart(singleClasses)}
                     className="btn mx-auto mt-5 w-[450px] btn-primary"
                   >
                     Add to cart
-                  </button>
+                  </button></NavLink>
                 </div>
               </div>
             </div>
