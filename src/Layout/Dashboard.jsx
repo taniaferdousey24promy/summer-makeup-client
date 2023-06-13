@@ -22,13 +22,16 @@ import {
   useNavigate,
 } from "react-router-dom";
 import useCart from "../hooks/useCart";
+import useAdmin from "../hooks/useAdmin";
 
 const Dashboard = () => {
   const [cart] = useCart();
-  const isAdmin = true;
+  // const isAdmin = true;
+  const [isAdmin]=useAdmin();
   const navigate = useNavigate();
   const location = useLocation();
   // navigate('/dashboard')
+
 
   return (
     <div className="drawer lg:drawer-open ">
@@ -59,7 +62,7 @@ const Dashboard = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/dashboard/reservations">
+                <NavLink to="/dashboard/addclasses">
                    
                   <FaBell></FaBell>Add New Classes
                 </NavLink>
