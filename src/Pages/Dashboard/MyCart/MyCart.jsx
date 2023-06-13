@@ -8,7 +8,7 @@ const MyCart = () => {
     const [cart,refetch]=useCart();
     console.log(cart);
     const total= cart.reduce((sum,singleClasses)=> 
-    parseInt(singleClasses.price) + sum, 0);
+    parseFloat(singleClasses.price) + sum, 0);
 
     const handleDelete =singleClasses=>{
         Swal.fire({
