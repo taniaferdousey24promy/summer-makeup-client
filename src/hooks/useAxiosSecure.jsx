@@ -10,7 +10,7 @@ const axiosSecure = axios.create({
 //security layer: verifyJwt , same email, check admin
 //5
 const useAxiosSecure = () => {
-  const { logOut } = useAuth(AuthContext);
+  const { logOut } = useAuth();
 
   const navigate = useNavigate();
 

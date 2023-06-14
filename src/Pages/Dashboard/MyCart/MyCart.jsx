@@ -40,6 +40,7 @@ const MyCart = () => {
         <div>
             <div>
             <h3>Total Items : {cart.length}</h3>
+            <h3>Total Items : {cart.length}</h3>
             <h3>Total Price : {total}</h3>
             <button className='btn btn-sm bg-[#FF69B4]'>Pay</button>
         </div>

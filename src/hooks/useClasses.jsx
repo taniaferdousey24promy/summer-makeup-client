@@ -1,20 +1,19 @@
-import React, { useEffect, useState } from "react";
+import { useQuery } from "@tanstack/react-query";
 
 const useClasses = () => {
-  const [classes, setClasses] = useState([]);
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    fetch(
-      "https://summer-makeup-server-taniaferdousey24promy.vercel.app/allclasses"
-    )
-      .then((res) => res.json())
-      .then((data) => {
-        setClasses(data);
-        setLoading(false);
-      });
-  }, []);
 
-  return [classes, loading];
+
+  const {data: allclasses =[], isLoading:loading,refetch} = useQuery({
+    queryKey: ['allclasses'],
+    queryFn: async() =>{
+      const res = await fetch('http://localhost:5000/allclasses');
+      return res.json();
+    }
+  })
+
+
+
+  return [allclasses, loading,refetch]
 };
 
 export default useClasses;
