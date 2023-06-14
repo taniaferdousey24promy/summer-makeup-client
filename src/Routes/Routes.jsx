@@ -44,6 +44,10 @@ export const router = createBrowserRouter([
       {
         path: "allclasses",
         element: <AllClasses></AllClasses>
+      },
+      {
+        path:"*",
+        element:<Error></Error>
       }
     ],
   },
@@ -67,6 +71,10 @@ export const router = createBrowserRouter([
       {
         path: "manageClasses",
         element: <AdminRoute><ManageClasses></ManageClasses></AdminRoute>
+      },
+      {
+        path:"*",
+        element:<Error></Error>
       }
     ]
 

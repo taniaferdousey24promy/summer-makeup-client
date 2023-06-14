@@ -8,29 +8,52 @@ import useCart from "../../hooks/useCart";
 
 const AllClasses = () => {
   const [classes] = useClasses();
-  const [,refetch] = useCart();
+  const [, refetch] = useCart();
   const { user } = useContext(AuthContext);
   const navigate = useNavigate();
   const location = useLocation();
   const approved = classes.filter(
     (singleClass) => singleClass.status === "approved"
   );
-  const handleAddToCart = singleClass => {
-    const {_id,className,classPicture,price,studentNumber,instructorName,instructorImage,instructorEmail,availableSeats,status}=singleClass;
+  const handleAddToCart = (singleClass) => {
+    const {
+      _id,
+      className,
+      classPicture,
+      price,
+      studentNumber,
+      instructorName,
+      instructorImage,
+      instructorEmail,
+      availableSeats,
+      status,
+    } = singleClass;
     console.log(singleClass);
     if (user && user.email) {
-      const cartSingleClasses = {className,classPicture,price,studentNumber,instructorName,instructorImage,instructorEmail,availableSeats,status,email:user.email}
-      fetch('http://localhost:5000/carts',{
-        method:'POST',
-        headers:{
-          'content-type':'application/json'
-        },
-        body:JSON.stringify(cartSingleClasses)
-      })
-      
-        .then(res => res.json())
-        .then(data => {
-          
+      const cartSingleClasses = {
+        className,
+        classPicture,
+        price,
+        studentNumber,
+        instructorName,
+        instructorImage,
+        instructorEmail,
+        availableSeats,
+        status,
+        email: user.email,
+      };
+      fetch(
+        "https://summer-makeup-server-taniaferdousey24promy.vercel.app/carts",
+        {
+          method: "POST",
+          headers: {
+            "content-type": "application/json",
+          },
+          body: JSON.stringify(cartSingleClasses),
+        }
+      )
+        .then((res) => res.json())
+        .then((data) => {
           if (data.insertedId) {
             refetch();
             Swal.fire({
@@ -39,27 +62,25 @@ const AllClasses = () => {
               title: "Course added on the cart.",
               showConfirmButton: false,
               timer: 1500,
-            })
+            });
           }
-        })
-    }
-    else{
+        });
+    } else {
       Swal.fire({
-        title: 'Please Login to buy our courses',
-        icon: 'warning',
+        title: "Please Login to buy our courses",
+        icon: "warning",
         showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
-        confirmButtonText: 'Login now!'
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Login now!",
       }).then((result) => {
         if (result.isConfirmed) {
           //here
-          navigate('/login',{state:{from:location}})
+          navigate("/login", { state: { from: location } });
         }
-      })
-
+      });
     }
-  }
+  };
   return (
     <div className=" mb-20">
       <p className="mb-12 mt-20 text-center text-4xl">
@@ -103,12 +124,14 @@ const AllClasses = () => {
                   {/* <div className="badge badge-outline">Weekly</div> */}
 
                   {/* <div className="badge badge-outline"> Price: {singleClasses.price}</div> */}
-                  <NavLink to="/dashboard/mycart"><button
-                    onClick={() => handleAddToCart(singleClasses)}
-                    className="btn mx-auto mt-5 w-[450px] btn-primary"
-                  >
-                    Add to cart
-                  </button></NavLink>
+                  <NavLink to="/dashboard/mycart">
+                    <button
+                      onClick={() => handleAddToCart(singleClasses)}
+                      className="btn mx-auto mt-5 w-[450px] btn-primary"
+                    >
+                      Add to cart
+                    </button>
+                  </NavLink>
                 </div>
               </div>
             </div>

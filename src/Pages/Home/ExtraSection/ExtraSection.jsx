@@ -10,6 +10,9 @@ const AppContainer = styled("div", {
   justifyContent: "center",
   alignItems: "center",
   marginLeft: 500,
+
+ 
+  
 });
 
 const Container = styled("div", {
@@ -73,15 +76,16 @@ const ExtraSection = () => {
   };
   return (
     <div>
-      <AppContainer>
-        <Container onClick={handleClick}>
+      <AppContainer >
+        <Container  onClick={handleClick}>
           {trail.map(({ rotateX }, i) => (
             <Box key={i}>
               <FrontBox
+              
                 key={items[i]}
                 style={{
                   transform: rotateX.to(
-                    (val) => `perspective(600px) rotateX(${val}deg)`
+                    (val) => `perspective(500px) rotateX(${val}deg)`
                   ),
                   transformStyle: "preserve-3d",
                 }}
@@ -89,6 +93,8 @@ const ExtraSection = () => {
                 {"?"}
               </FrontBox>
               <BackBox
+
+              
                 style={{
                   transform: rotateX.to(
                     (val) => `perspective(600px) rotateX(${180 - val}deg)`
@@ -107,9 +113,9 @@ const ExtraSection = () => {
         <div className="hero-content flex-col lg:flex-row gap-0">
           <img
             src="https://i.postimg.cc/Gp8LYtqV/The-Anti-Aging-Contour-Trick-Every-Woman-Over-40-Should-Try.jpg"
-            className="w-[500px] h-[400px]  shadow-2xl"
+            className=" lg:w-[500px] h-[450px]  shadow-2xl"
           />
-          <div className=" w-[1000px] bg-[#FBCEB1] h-[400px] p-12">
+          <div className=" lg:w-[500px]  bg-[#FBCEB1] lg:h-[450px] p-12">
             <h1 className="text-4xl font-bold">
               <span className="text-[#FA8072]	">SURPRISE</span>  on Smokey Eye Makeup Course!
             </h1>

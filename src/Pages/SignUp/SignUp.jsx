@@ -12,52 +12,51 @@ const SignUp = () => {
     reset,
     formState: { errors },
   } = useForm();
-  const { createUser,updateUserProfile } = useContext(AuthContext);
+  const { createUser, updateUserProfile } = useContext(AuthContext);
   const navigate = useNavigate();
-  const onSubmit = data => {
+  const onSubmit = (data) => {
     console.log(data);
 
-    createUser(data.email, data.password,data.photoURL).then(result => {
+    createUser(data.email, data.password, data.photoURL).then((result) => {
       const loggedUser = result.user;
       console.log(loggedUser);
-      updateUserProfile(data.name,data.photoURL)
-      .then (()=>{
+      updateUserProfile(data.name, data.photoURL).then(() => {
         console.log(loggedUser);
-        updateUserProfile(data.name,data.photoURL)
-        .then(()=>{
+        updateUserProfile(data.name, data.photoURL).then(() => {
           console.log(loggedUser);
-          const saveUser = {name:data.name,email:data.email,photoURL:data.photoURL}
-          fetch("http://localhost:5000/users",
-          {
-            method:'POST',
-            headers:{
-              'content-type':'application/json'
-            },
-            body:JSON.stringify(saveUser)
-          })
-          .then((res)=>
-            res.json()
-          )
-          .then((data)=>{
-            if(data.insertedId){
-              reset();
-              Swal.fire({
-                position:'top-end',
-                icon:'success',
-                title: 'User Created Successfully.',
-                showConfirmButton:false,
-                timer:1500
-    
-    
-              });
-              navigate('/');
-
+          const saveUser = {
+            name: data.name,
+            email: data.email,
+            photoURL: data.photoURL,
+          };
+          fetch(
+            "https://summer-makeup-server-taniaferdousey24promy.vercel.app/users",
+            {
+              method: "POST",
+              headers: {
+                "content-type": "application/json",
+              },
+              body: JSON.stringify(saveUser),
             }
-          })
-         
-          .catch(error=> console.log(error))
-        })
-      })
+          )
+            .then((res) => res.json())
+            .then((data) => {
+              if (data.insertedId) {
+                reset();
+                Swal.fire({
+                  position: "top-end",
+                  icon: "success",
+                  title: "User Created Successfully.",
+                  showConfirmButton: false,
+                  timer: 1500,
+                });
+                navigate("/");
+              }
+            })
+
+            .catch((error) => console.log(error));
+        });
+      });
     });
   };
   return (

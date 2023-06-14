@@ -1,20 +1,21 @@
-import React from 'react';
-import { Outlet, useLoaderData, useLocation } from 'react-router-dom';
-import Footer from '../Pages/Shared/Footer/Footer';
-import Navbar from '../Pages/Shared/Navbar/Navbar';
+import React from "react";
+import { Outlet, useLoaderData, useLocation } from "react-router-dom";
+import Footer from "../Pages/Shared/Footer/Footer";
+import Navbar from "../Pages/Shared/Navbar/Navbar";
+import Error from "../Pages/Error/Error";
 
 const Main = () => {
-    const location = useLocation();
-    console.log(location);
-    const noNavbarFooter = location.pathname.includes('error')
-    return (
-        <div>
-            {noNavbarFooter || <Navbar></Navbar>}
-            <Outlet></Outlet>
-            {noNavbarFooter || <Footer></Footer>}
-            
-        </div>
-    );
+  const location = useLocation();
+  console.log(location);
+  const noNavbarFooter = location.pathname.includes("error");
+  return (
+      <div>
+        {noNavbarFooter && <Navbar></Navbar>}
+        <Outlet></Outlet>
+        {noNavbarFooter && <Footer></Footer>}
+      </div>
+
+  );
 };
 
 export default Main;
