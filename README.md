@@ -1,11 +1,11 @@
 [Visit my `summer-makeup website` website](https://summer-camp-client-9557f.web.app/)
 
 ##Features
-+ In my Home page I have added Banner section, About Us as an extra Section,Toy Hub as Gallery section. Also added another section with a hello message for our customers and a tab section depending on different sub-categories
-+ Added Navbar, Footer in every page except the error page
-+ If the use reaches to a error page they can go back to home with a button.
-+ If the user want to see all toys they can see it without signing in.
-+ They need to signUp/ logIn first to see our product's detailed information
-+ We also have a blog section with all the questions and answers
-+ User can easily upload their toy in our website.
-+ Also they can search up any toy they want to order.
++ In my Home page I have added Banner section, Popular classes , animated part with the surprise  section
++ popular instructors section in home page
++ stylish footer
++ In instructors page we can see all the instructors
++ In classes page we can see all the available classes
++ in dashboard user can see their added classes
++ admin can control the classes by approving them 
++ admin can deny the added classes by the users
